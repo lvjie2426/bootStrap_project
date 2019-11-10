@@ -1,0 +1,139 @@
+@media screen and (max-width: 768px) {
+  header .nav li {
+    width: 20%;
+  }
+  header .nav li a {
+    padding: 0;
+    font-size: 12px;
+  }
+  section .news ul li {
+    width: 50%;
+  }
+  section .news ul li:nth-child(1) {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 990px) {
+  header .nav li {
+    float: left;
+    width: 20%;
+  }
+  section {
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    margin: 0 auto;
+  }
+}
+body {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444;
+  overflow-x: hidden;
+}
+header .logo {
+  background: #429ad9;
+}
+header .logo img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+header .nav {
+  background: #eeeeee;
+}
+header .nav a {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+  font-size: 16px;
+  padding: 0;
+  padding-left: 30px;
+}
+header .nav a::before {
+  vertical-align: middle;
+  padding-right: 5px;
+}
+header[class^='col'],
+section[class^='col'],
+aside[class^='col'] {
+  padding-left: 0;
+}
+.news ul {
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+.news ul li {
+  float: left;
+  list-style-type: none;
+  width: 25%;
+  height: 133px;
+}
+.news ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.news ul li a p {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  margin: 0;
+  padding: 5px 10px ;
+  color: #fff;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.6);
+}
+.news ul li img {
+  width: 100%;
+  height: 100%;
+}
+.news ul li:nth-child(1) {
+  height: 266px;
+  width: 50%;
+}
+.art-group {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+.art-group [class^='col'] img {
+  vertical-align: middle;
+  width: 100%;
+  margin-top: 10px;
+}
+.rlogo a {
+  display: block;
+  width: 100%;
+}
+.rlogo a img {
+  width: 100%;
+}
+.rhot {
+  border: 1px solid #ccc;
+  padding: 0 10px;
+  margin-top: 20px;
+}
+.rhot a.hotlink {
+  border-radius: 0;
+  margin-bottom: 20px;
+}
+.rhot p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: nowrap;
+  word-wrap: none;
+  word-break: break-all;
+}
